@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería del Pirata</title>
+    <link rel="stylesheet" href="mosaico.css">
+</head>
+<body>
+    <header>
+        <h1>Galería Mugiwara</h1>
+    </header>
+
+    <div class="galeria" id="galeria">
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/luffy.png" alt="Luffy" width="275" height="330">
+            </div>
+            <div class="cara reverso">
+                <img src="img/F1C1.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/zoro.png" alt="Zoro" width="275" height="330">
+            </div>
+            <div class="cara reverso">
+                <img src="img/F1C2.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/nami.png" alt="Nami" width="275" height="330">
+            </div>
+            <div class="cara reverso">
+                <img src="img/F1C3.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/usopp.png" alt="usopp"width="275" height="330">
+            </div>
+            <div class="cara reverso">
+                <img src="img/F1C4.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/sanji.png" alt="sanji" width="275" height="330">
+            </div>
+            <div class="cara reverso">
+                <img src="img/F1C5.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/chopper.png" alt="chopper" width="275" height="330">
+            </div>
+            <div class="cara reverso">
+                <img src="img/F2C1.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/robin.png" alt="robin" width="275" height="330">
+            </div>
+            <div class="cara reverso">
+                <img src="img/F2C2.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/franky.png" alt="franky" width="275" height="330">
+            </div>
+            <div class="cara reverso">
+                <img src="img/F2C3.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/brook.png" alt="brook" width="275" height="330"> 
+            </div>
+            <div class="cara reverso">
+                <img src="img/F2C4.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+        <div class="carta" onclick="girarCarta(this)">
+            <div class="cara frente">
+                <img src="img/jinbe.png" alt="jinbe" width="275" height="330">
+            </div>
+            <div class="cara reverso">
+                <img src="img/F2C5.png" alt="Mugiwara Crew" width="290" height="348">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function girarCarta(carta) {
+            // Añadimos la clase 'girada' para activar el giro
+            carta.classList.add('girada');
+        }
+    </script>
+</body>
+</html>

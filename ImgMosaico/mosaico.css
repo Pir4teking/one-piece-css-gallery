@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background: #1a1a1a url('https://wallpapercave.com/wp/wp8890501.jpg') fixed;
+    background-size: cover;
+    font-family: 'Pirata One', cursive;
+}
+
+header {
+    background: linear-gradient(45deg, #47cfdf, #2178ab);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(34, 179, 231, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://i.pinimg.com/736x/f7/a6/08/f7a608273e5cfa6af2cccc1240039b5d.jpg');
+    opacity: 0.6;
+    animation: flotar 20s infinite linear;
+}
+
+@keyframes flotar {
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%; }
+}
+
+h1 {
+    color: #FFD700;
+    font-size: 4.5rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+    margin: 0;
+    position: relative;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem; /* Reduce el espacio entre las cartas */
+    padding: 1.5rem; /* Ajusta el padding alrededor de la galería */
+    perspective: 1000px;
+}
+
+.carta {
+    position: relative;
+    height: 330px; /* Ajusta la altura */
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.carta.girada {
+    transform: rotateY(180deg);
+}
+
+.cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.frente, .reverso {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.reverso {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carta:hover {
+    transform: scale(1.05);
+}
+
+@keyframes flotando {
+    from {
+        transform: translateY(0) rotate(0deg);
+    }
+    to {
+        transform: translateY(-15px) rotate(2deg);
+    }
+}
